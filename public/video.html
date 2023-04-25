@@ -1,0 +1,25 @@
+// public/video.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testando Streaming</title>
+</head>
+<body>
+
+  <h2>Testando Streaming</h2>
+
+  <video id="videoplayer" controls>
+    <source src="/episodes/stream?videoUrl=videos/course-17/｜BONKERS｜.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiZmlyc3ROYW1lIjoiS2F1w6MiLCJlbWFpbCI6ImthdWFAZW1haWwuY29tIiwiaWF0IjoxNjgyMzQ1MjM5LCJleHAiOjE2ODI5NTAwMzl9.qXY6fyp5D5Q-u0vfBq5Z8Cv9rmLC9MyP-cmaCcMTixQ" type="video/mp4">
+  </video>
+
+  <script>
+    var myvideo = document.getElementById('videoplayer')
+    myvideo.currentTime = 70;
+    myvideo.play();
+  </script>
+</body>
+</html>
