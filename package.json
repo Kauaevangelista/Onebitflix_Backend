@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
-    "start": "ts-node-dev src/server.ts",
+    "start": "node dist/server.js",
     "build": "tsc"
   },
   "keywords": [],
